@@ -12,7 +12,7 @@ def play_hangman():
     guessed_letters = []
     attempts = 6
 
-    print("Добре дошли в Бесеница!")
+    print("||Добре дошли в Бесеница!||")
 
     while attempts > 0:
         display_word = ""
@@ -23,11 +23,11 @@ def play_hangman():
                 display_word += "_ "
 
         print(f"\nДума: {display_word}")
-        print(f"Оставащи опити: {attempts}")
-        print(f"Използвани букви: {', '.join(guessed_letters)}")
+        print(f"Оставащи опити -> {attempts}")
+        print(f"Използвани букви -> {', '.join(guessed_letters)}")
 
         if "_" not in display_word:
-            print(f"Поздравления! Позна думата: {word}")
+            print(f"Поздравления!! Позна думата: {word}")
             break
 
         guess = input("Въведи буква: ").lower()
@@ -37,7 +37,7 @@ def play_hangman():
             continue
 
         if guess in guessed_letters:
-            print("Вече си пробвал тази буква.")
+            print("!!!Вече си пробвал тази буква!!!")
             continue
 
         guessed_letters.append(guess)
