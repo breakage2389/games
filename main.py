@@ -33,7 +33,7 @@ def play_hangman():
         guess = input("Въведи буква: ").lower()
 
         if len(guess) != 1 or not guess.isalpha():
-            print("Моля, въведи само една буква!")
+            print("Моля, въведи само една буква.")
             continue
 
         if guess in guessed_letters:
